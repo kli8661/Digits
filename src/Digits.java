@@ -20,9 +20,9 @@ public class Digits {
 
     public boolean isStrictlyIncreasing()
     {
-        for(int i = 0; i < digits.size() - 1; i++)
+        for(int i = 1; i < digits.size()-1; i++)
         {
-            if(digits.get(i) < digits.get(i + 1))
+            if(digits.get(i) > digits.get(i + 1) || digits.get(i).equals(digits.get(i + 1)))
             {
                 return false;
             }
